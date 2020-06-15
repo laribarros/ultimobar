@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul,li
+{
+	list-style:none;
+}
+
+*:focus
+{
+	outline:none;
+}
+
+.clear
+{
+	clear:both;
+}
+
+a, a:hover, a:visited
+{
+	text-decoration:none;
+	border:0 none; 
+	color: inherit;
+}
+
+img
+{
+	border:0 none;
+}
+
+textarea
+{
+	resize:none;
+}
+
+input, textarea, select 
+{ 
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	-o-appearance: none; 
+	appearance: none; 
+	-ms-appearance: none; 
+	-webkit-border-radius: 0; 
+}
+
+select::-ms-expand 
+{ 
+	display: none; 
+}
+
+select
+{ 
+	text-indent: 0.01px; 
+	text-overflow: ''; 
+}
+
+select::-ms-expand 
+{ 
+	display: none; 
+}
+
+body
+{
+	background: url('../img/fundo.jpg') top center repeat-x;
+	overflow-x: hidden;
+}
+
+.conteudo
+{
+	width: 1060px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.menu
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.menu a
+{
+	text-transform: uppercase;
+	margin-left: 74px;
+	margin-right: 74px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	color: #000;
+	-webkit-transition: all 0.4s; /* Safari */
+    transition: all 0.4s;
+}
+
+.menu a:hover
+{
+	color: #792e1a;
+}
+
+.menuFixo
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: url('../img/fundoMenu.png');
+	text-align: center;
+	z-index: 999;
+	display: none;
+}
+
+.menuFixo .menu
+{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menuFixo .menu a
+{
+	color: #fff;
+}
+
+.conteudo .espacoB
+{
+	margin-bottom: 50px;
+}
+
+.swiper-container
+{
+	margin-bottom: 25px;
+}
+
+.swiper-button-prev, .swiper-button-next
+{
+	background: none;
+}
+
+.conteudo .texto
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	width: 710px;
+	text-align: justify;
+	z-index: 99;
+    position: relative;
+}
+
+.conteudo .texto a
+{
+	background-color: #7a3320;
+	padding: 5px 90px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.conteudo .texto b
+{
+	font-family: 'Oswald', sans-serif;
+}
+
+.conteudo .texto a.esquerda
+{
+	float: left;
+	margin-left: 90px;
+}
+
+.conteudo .texto a.direita
+{
+	float: right;
+	margin-right: 90px;
+}
+
+.conteudo .descricao
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+
+.conteudo .descricao span
+{
+	font-size: 24px;
+}
+
+.conteudo .redesSociais
+{
+    margin-top: 160px;
+    margin-bottom: 15px;
+}
+
+.conteudo .guitarra
+{
+	background: url('../img/guitarra.png');
+	width: 672px;
+	height: 988px;
+	position: absolute;
+    margin-left: 588px;
+    margin-top: -958px;
+    z-index: 9;
+}
+
+.conteudo .redes
+{
+	width: 300px;
+	height: 350px;
+}
+
+.conteudo .redes div
+{
+	font-family: 'Great Vibes', cursive;
+	color: #fff;
+	font-size: 40px;
+	text-align: left;
+}
+
+.conteudo .redes.facebook
+{
+	float: left;
+}
+
+.conteudo .redes.instagram
+{
+	margin: 0 auto;
+}
+
+.conteudo .redes.spotify
+{
+	float: right;
+	overflow: hidden;
+}
+
+.conteudo .galeranobar
+{
+	margin-top: 30px;
+}
+
+.conteudo .galeranobar div a img
+{
+	width: 255px;
+	height: 255px;
+}
+
+.conteudo .enviaEmail
+{
+	width: 530px;
+	float: left;
+	margin-top: 80px;
+}
+
+.conteudo .enviaEmail input[type="text"], .conteudo .enviaEmail input[type="email"], .conteudo .enviaEmail textarea
+{
+	width: 498px;
+	padding: 15px;
+	display: block;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	background: transparent;
+	margin-bottom: 15px;
+}
+
+.conteudo .enviaEmail textarea
+{
+	height: 108px;
+}
+
+.conteudo .enviaEmail input[type="submit"]
+{
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 13px 39px;
+	background-color: #7a3320;
+	float: right;
+	border: 0;
+	cursor: pointer;
+}
+
+.conteudo .contatos
+{
+	width: 480px;
+	float: right;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.fundoRodape
+{
+	background-color: #000;
+    height: 102px;
+    margin-top: 580px;
+}
+
+.fundoRodape .rodape
+{
+	width: 1060px;
+	margin: 0 auto;
+    padding-top: 40px;
+    height: 60px;
+}
+
+.fundoRodape .rodape .creditos
+{
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #fff;
+	float: left;
+}
+
+.fundoRodape .rodape .desenvolvido
+{
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #fff;
+	float: right;
+	text-transform: uppercase;
+}
+
+.fundoRodape .rodape .euforia
+{
+	background: url(../img/euforia.png) no-repeat center;
+	width: 75px;
+	height: 32px;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    float: right;
+    margin-top: -7px;
+    margin-left: 10px;
+}
+
+.fundoRodape .rodape .euforia:hover
+{
+	background: url(../img/euforiaH.png) no-repeat center;
+}
+
+@media(max-width: 950px) {
+	.fundoRodape
+	{
+		width: 1080px;
+	}
+
+    .conteudo
+    {
+    	padding-left: 10px;
+    	padding-right: 10px;
+    }
+
+    .conteudo .guitarra
+    {
+    	display: none;
+    }
+
+    .conteudo .grandeMobile
+    {
+    	width: 100%;
+    }
+
+    .conteudo .texto, .conteudo .descricao
+    {
+    	font-size: 25px;
+    }
+
+    .fundoRodape .rodape .creditos, .fundoRodape .rodape .desenvolvido
+	{
+		font-size: 18px;
+	}
+
+	.conteudo .texto a.esquerda
+	{
+		margin-left: 230px;
+	}
+
+	.conteudo .texto a.direita
+	{
+		margin-right: 230px;
+	}
+
+	#mapa
+	{
+		display: none;
+	}
+
+	.menuFixo .menu
+	{
+		margin-top: 40px;
+	    margin-bottom: 40px;
+	}
+}
